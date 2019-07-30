@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="30eae4f5-d5dd-4e56-81f3-bbdd41d485c9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Collection/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/Collection.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/out/production/Collection/META-INF/Collection.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/out/production/Collection/com/bit/Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/out/production/Collection/com/bit/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/out/production/Collection/com/bit/MyAddress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/out/production/Collection/com/bit/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/out/production/Collection/com/bit/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/out/production/Collection/com/bit/Person1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/out/production/Collection/com/bit/PersonASc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/out/production/Collection/com/bit/PlayBall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/out/production/Collection/com/bit/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/out/production/Collection/com/bit/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/src/com/bit/Data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/src/com/bit/MyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/src/com/bit/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Single.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestSingle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestSingle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadJava/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadJava/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadJava/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadJava/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadJava/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadJava/ThreadJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadJava/out/production/ThreadJava/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreadJava/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/java_cookie_cp30.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/src/main/java/com/bite/cookie/HelloCookie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/src/main/java/com/bite/cookie/response_header/ResponseHeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/src/main/java/test/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/src/main/webapp/adv.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/src/main/webapp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/src/main/webapp/login1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/classes/com/bite/cookie/HelloCookie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/classes/com/bite/cookie/response_header/ResponseHeader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/classes/test/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/java_cookie_cp30-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/java_cookie_cp30-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/java_cookie_cp30-1.0-SNAPSHOT/WEB-INF/classes/com/bite/cookie/HelloCookie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/java_cookie_cp30-1.0-SNAPSHOT/WEB-INF/classes/com/bite/cookie/response_header/ResponseHeader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/java_cookie_cp30-1.0-SNAPSHOT/WEB-INF/classes/test/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/java_cookie_cp30-1.0-SNAPSHOT/WEB-INF/lib/c3p0-0.9.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/java_cookie_cp30-1.0-SNAPSHOT/WEB-INF/lib/commons-dbutils-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/java_cookie_cp30-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-6.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/java_cookie_cp30-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/java_cookie_cp30-1.0-SNAPSHOT/adv.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/java_cookie_cp30-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/java_cookie_cp30-1.0-SNAPSHOT/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_cookie_cp30/target/java_cookie_cp30-1.0-SNAPSHOT/login1.html" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\develop\repository" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="520" />
+    <option name="y" value="276" />
+    <option name="width" value="845" />
+    <option name="height" value="755" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="my_spring_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitHupRepositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564066837210" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30eae4f5-d5dd-4e56-81f3-bbdd41d485c9" name="Default Changelist" comment="" />
+      <created>1564066727081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564066727081</updated>
+      <workItem from="1564066732045" duration="241000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="241000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21261115" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
