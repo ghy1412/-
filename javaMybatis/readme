@@ -1,0 +1,6 @@
+映射文件命名:
+User.xml(原始ibatis命名方式), mapper代理开发映射文件名称叫XXXMapper.xml
+比如:UserMapper.xml,ItemsMapper.xml
+
+
+在映射文件中配置sql语句
