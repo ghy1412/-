@@ -60,7 +60,7 @@
             </map>
         </property>
     </bean>
-    <bean id="bean4" class="com.ming.bean.Bean4">
+    <bean id="bean4" class="com.ming.bean.Bean4" scope="prototype">
         <property name="date">
             <value>2017-09-12</value>
         </property>
