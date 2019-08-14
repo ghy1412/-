@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+    namespace is must be established
+-->
+<!--命名空间,理解为sql隔离-->
+<mapper namespace="com.cn.mapper.UserMapper">
+
+
+
+    <sql id="mySQL">
+        <if test="userEx != null">
+            <if test="userEx.username != null">
+                and username like '%${userEx.username}%'
+            </if>
+            <if test="userEx.sex != null">
+                and sex = #{userEx.sex}
+            </if>
+        </if>
+    </sql>
+
+    <select id="findAll" parameterType="int" resultType="com.cn.po.UserEx">
+        select * from user
+    </select>
+
+
+    <select id="queryForUser" parameterType="com.cn.bz.UserBz" resultType="com.cn.po.UserEx">
+         select * from user
+        <where>
+          <include refid="mySQL"/>
+        </where>
+    </select>
+
+    <sql id="MySQL1" >
+        <if test="username != null">
+            and username = #{username}
+        </if>
+        <if test="sex != null">
+            and sex = #{sex}
+        </if>
+    </sql>
+
+    <resultMap id="queryUserByNameAndSexResultMap" type="com.cn.po.User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="sex" property="sex"/>
+    </resultMap>
+
+    <select id="queryUserByNameAndSex" parameterType="com.cn.po.User" resultMap="queryUserByNameAndSexResultMap">
+
+      select *
+      from  user
+      <where>
+          <include refid="MySQL1"/>
+      </where>
+    </select>
+
+    <resultMap id="MyMap" type="com.cn.po.UserEx">
+        <id column="id" property="id"/>
+        <result column="MyName" property="username"/>
+        <result column="MySex" property="sex"/>
+        <result column="Myaddr" property="address"/>
+    </resultMap>
+    <select id="queryUserByAlias" resultMap="MyMap">
+        select
+        username as MyName,
+        sex  MySex,
+        address  Myaddr
+        from
+        user;
+    </select>
+
+    <resultMap id="queryUserToItemsResultMap" type="com.cn.po.User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="birthday" property="birthday"/>
+        <result column="sex" property="sex"/>
+        <result column="address" property="address"/>
+
+        <association property="orders" javaType="com.cn.po.Orders">
+            <id column="OrdersID" property="id"/>
+            <result column="user_id" property="userid"/>
+            <result column="number" property="number"/>
+
+            <!--一对多就用collection-->
+            <collection property="orderdetails" ofType="com.cn.po.Orderdetail">
+                <id column="DetailID" property="id"/>
+                <result column="items_id" property="itemsId"/>
+
+                <!--一对一的关系-->
+                <association property="items" javaType="com.cn.po.Items">
+                    <id column="ITEMID" property="id"/>
+                    <result column="name" property="name"/>
+                    <result column="price" property="price"/>
+                    <result column="detail" property="detail"/>
+                </association>
+            </collection>
+        </association>
+    </resultMap>
+
+    <select id="queryUserToItems" resultMap="queryUserToItemsResultMap">
+        select
+        user.*,
+
+        orders.id as OrdersID,
+        orders.user_id,
+        orders.number,
+
+        orderdetail.id as DetailID,
+        orderdetail.items_id,
+
+        items.id as ITEMID,
+        items.name,
+        items.price,
+        items.detail
+
+        from
+        user,
+        orders,
+        orderdetail,
+        items
+
+        where
+
+          user.id = orders.user_id
+        and  orders.id = orderdetail.orders_id
+        and  orderdetail.items_id= items.id;
+
+    </select>
+    <resultMap id="queryUserForIdResultMap" type="com.cn.po.User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="birthday" property="birthday"/>
+        <result column="sex" property="sex"/>
+        <result column="address" property="address"/>
+    </resultMap>
+
+    <select id="queryUserForId" parameterType="java.util.List" resultMap="queryUserForIdResultMap">
+        select *
+        from user
+        <where>
+            <foreach collection="list" separator="," open="id in(" close=")" item="p" >
+           #{p}
+            </foreach>
+
+        </where>
+    </select>
+
+    <insert id="insertUser" >
+        insert into user(username,sex,address) values
+        <foreach collection="list" open="(" close=")" separator="),(" item="user">
+            #{user.username},#{user.sex},#{user.address}
+        </foreach>
+    </insert>
+
+
+</mapper>
