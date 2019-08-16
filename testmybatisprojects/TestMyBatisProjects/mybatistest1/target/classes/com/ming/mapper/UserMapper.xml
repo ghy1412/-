@@ -1,0 +1,62 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ming.mapper.UserMapper">
+
+
+    <sql id="mySQL">
+            <if test="userEx != null">
+                <if test="userEx.sex != null">
+                    and sex = #{userEx.sex}
+                </if>
+                <if test="userEx.username != null">
+                    and username like '%${userEx.username}%'
+                </if>
+            </if>
+    </sql>
+
+    <select id="querUserByZH" parameterType="com.ming.bz.UserBz" resultType="com.ming.po.UserEx">
+        select
+            *
+        from
+            user
+        <where>
+            <include refid="mySQL"/>
+        </where>
+    </select>
+
+    <select id="queryUserByCount" parameterType="com.ming.bz.UserBz" resultType="int">
+        select
+            count(*)
+        from
+            user
+        <where>
+            <include refid="mySQL"/>
+        </where>
+    </select>
+
+
+    <select id="queryUserByAlias" resultType="com.ming.po.UserEx">
+        select
+            username as MyName, sex MySex, address MyAddress
+        from
+            user;
+    </select>
+
+    <!--defined resultMap here-->
+    <resultMap id="myResultMap" type="com.ming.po.User">
+        <id column="id" property="id"/>
+        <result column="MyName" property="username"/>
+        <result column="MySex" property="sex"/>
+        <result column="MyAddress" property="address"/>
+    </resultMap>
+    <select id="queryUserByAlias2" resultMap="myResultMap">
+        select
+            username as MyName,
+            sex MySex,
+            address MyAddress
+        from
+            user;
+    </select>
+
+</mapper>
