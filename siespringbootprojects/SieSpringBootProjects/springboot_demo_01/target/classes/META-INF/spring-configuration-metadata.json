@@ -1,0 +1,44 @@
+{
+  "groups": [
+    {
+      "name": "myemp",
+      "type": "com.ming.springboot.po.Employee",
+      "sourceType": "com.ming.springboot.po.Employee"
+    }
+  ],
+  "properties": [
+    {
+      "name": "myemp.boss",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.ming.springboot.po.Employee",
+      "defaultValue": false
+    },
+    {
+      "name": "myemp.emp-age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.ming.springboot.po.Employee",
+      "defaultValue": 0
+    },
+    {
+      "name": "myemp.emp-name",
+      "type": "java.lang.String",
+      "sourceType": "com.ming.springboot.po.Employee"
+    },
+    {
+      "name": "myemp.list",
+      "type": "java.util.List",
+      "sourceType": "com.ming.springboot.po.Employee"
+    },
+    {
+      "name": "myemp.map",
+      "type": "java.util.Map",
+      "sourceType": "com.ming.springboot.po.Employee"
+    },
+    {
+      "name": "myemp.user",
+      "type": "com.ming.springboot.po.User",
+      "sourceType": "com.ming.springboot.po.Employee"
+    }
+  ],
+  "hints": []
+}

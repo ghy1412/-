@@ -1,0 +1,21 @@
+server:
+  port: 8088
+
+#apply to some value to po object
+#myemp:
+#  empName: arvin
+#  empAge: 20
+#  boss: true
+#  list:
+#    - listvalue1
+#    - listvalue2
+#    - listvalue3
+#  map:
+#    key1: value1
+#    key2: value2
+#    key3: value3
+#  user:
+#    uName: michael
+#    uAge: 100
+
+
