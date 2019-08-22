@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+    namespace is must be established
+-->
+<!--命名空间,理解为sql隔离-->
+<mapper namespace="com.cn.mapper.UserMapper">
+    <cache/>
+    <resultMap id="queryUserByIdResultMap" type="com.cn.po.User">
+        <id column="id" property="userId"/>
+        <result column="username" property="userName"/>
+        <result column="birthday" property="birthday"/>
+        <result column="sex" property="sex"/>
+        <result column="address" property="Address"/>
+    </resultMap>
+    <select id="queryUserById" parameterType="int" resultMap="queryUserByIdResultMap">
+        select * from user where id = #{value};
+    </select>
+
+    <update id="modifyUserById" parameterType="com.cn.po.User" >
+        update user set username = #{userName} where id = #{userId};
+    </update>
+
+</mapper>
