@@ -1,0 +1,53 @@
+//使用quickStart
+
+//MD5加密
+//注册用户:  在服务端实现,需要网络
+//注册成功返回登陆界面, 连接断掉 --> 简化 现在放在客户端
+
+
+//
+dao : 数据库
+service : 处理业务
+
+1.加载驱动 --- Thread    1.加载数据源(已经创建好的数据库连接) - 类比线程池
+Class.forName("")
+2.获取连接
+3.使用完销毁             3.使用完不销毁   优点:1.降低资源消耗 2.提高响应速率 3.方便管理
+
+数据源 :
+最古老的数据源 c3p0数据源 性能低
+
+druid 拽~ 阿里数据源
+
+Hakari    spring的默认数据源
+
+
+JDBC :基于数据源
+
+
+1.加载数据源
+2.获取连接 Connection
+3.执行SQL
+4.关闭资源
+继承.有重复的 124三步操作 封装在BasedDao
+
+查询类SQL
+  select : executeQuery
+  PreparedStatement
+  ResultSet
+
+更新类SQL
+  insert/update/delete
+  PreparedStatement
+
+  //页面
+
+JPanel  - 盘子 存放各类组件的基础容器
+
+JLabel  - 标签  图片也是标签
+JTextField - 输入框
+JButton - 按钮
+JOptionPanel - 提示框(静态方法)
+
+-成功
+-失败
