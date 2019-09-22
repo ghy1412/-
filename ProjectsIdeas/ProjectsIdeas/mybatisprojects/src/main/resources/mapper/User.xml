@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+    namespace is must be established
+-->
+
+<mapper namespace="test">
+    <!--establish some relevant which  between object and table from database-->
+    <!--
+        parameter explain:
+         id: statementId
+         parameterType: input_param from sql statement
+         resultType: back value from sql statemnt
+         #{}: position where is from of the statement
+    -->
+    <select id="queryUserById" parameterType="int" resultType="com.ming.po.User">
+        select * from user where userid = #{value}
+    </select>
+
+</mapper>

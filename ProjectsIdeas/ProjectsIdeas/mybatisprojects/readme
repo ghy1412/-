@@ -1,0 +1,8 @@
+ how to established mybatis by yourselves. following step:
+   *  add jar package to project(POM.xml)   maven
+   *  (1) Core Config file ----> sqlMapConfig.xml [done]  single
+      (2) mapper Config file----> xxxMapper.xml   [done]  multi
+   *  add log information to project (key point mybatis log4j)
+      log4j.properties  [done]
+   *  db.properties(driver,name,url,pass) [done]
+   *  execute junit test
