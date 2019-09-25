@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>js的使用方式</title>
+        <!--
+             1）js的内部方式
+               head标签体中指定
+               script标签
+                           书写js代码
+            
+            2）外部方式    
+                在js文件下：创建js文件：书写js代码
+                将js文件导入到该页面
+                 <script src="外部js文件"></script>
+        -->
+<script>
+//js的单行注释
+/**
+* js多行注释
+*/
+
+/**
+* javascript常用的两个函数
+* document.write("xxx") ;js的输出函数
+* 消息对话框
+* window(该对象频繁使用，一般忽略不写).alert("消息对话框")；
+*
+* typeof(变量名)：查看当前变量数据类型
+*
+*/
+/*document.write("helllo,javascript");
+alert("hello,javascript") ;*/
+
+
+</script>
+
+<!--导入外部js文件-->
+<script src="js/01.js"></script>
+    </head>
+    <body>
+    </body>
+</html>
