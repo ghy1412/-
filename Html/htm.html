@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>完美世界</title>
+		<!--内部样式-->
+		<style>
+			#a_id{
+				text-decoration: inherit ;
+			}
+			
+			#sid:hover{
+				font: "微软雅黑";
+				color: red;
+			}
+			
+			#div_id{
+					
+			}
+		</style>
+		<script>
+			function selectChange(){
+				var p = document.getElementById("sid");
+				alert(p.value);
+			}
+			
+			function checkPwd(){
+				var a = document.getElementById("pwd");
+				var text = a.value;
+				var check_text = /^\w{2,6}$/;
+				if (!check_text.test(text)){
+					alert("cuowu");
+				}
+			  return true;
+			}
+		</script>
+	</head>
+	<body>
+		<a id = "a_id" href="http://www.baidu.com">百度大哥</a>
+		<a href="#a_id">tiaozhuan</a>
+		<input type="password" />
+		<input type="checkbox" name="wanmei">shijie</input>
+		<input type="checkbox" name="wanmei">wanmei</input>
+		<input type="checkbox" name="wanmei">caiguai</input>
+		<input type="radio" name="radio_a">男</input>
+		<input type="radio" name="radio_a">女</input>
+		
+		<!--隐藏域-->
+		<input type="hidden">
+		
+		<!--下拉菜单-->
+		<select id="sid" onchange="selectChange()">
+			<option>陕西</option>
+			<option>陕西</option>
+			<option>北京</option>
+		</select>
+		<br />
+		<hr />
+		<!--文本框-->
+		<textarea name="text" rows="10" cols="5"></textarea>
+		<!--负载均衡+高可用-->
+		
+		<div id="div_id">
+			<input type="password" />
+		</div>
+		<form action="htm.html" onsubmit="return checkPwd()">
+			<input type="password" id="pwd" />
+			<input type="submit" value="提交" />
+		</form>
+	</body>
+</html>
