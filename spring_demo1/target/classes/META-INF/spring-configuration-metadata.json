@@ -1,0 +1,44 @@
+{
+  "groups": [
+    {
+      "name": "user",
+      "type": "com.cn.spring_demo1.po.User",
+      "sourceType": "com.cn.spring_demo1.po.User"
+    }
+  ],
+  "properties": [
+    {
+      "name": "user.boss",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.cn.spring_demo1.po.User",
+      "defaultValue": false
+    },
+    {
+      "name": "user.list",
+      "type": "java.util.List",
+      "sourceType": "com.cn.spring_demo1.po.User"
+    },
+    {
+      "name": "user.map",
+      "type": "java.util.Map",
+      "sourceType": "com.cn.spring_demo1.po.User"
+    },
+    {
+      "name": "user.orders",
+      "type": "com.cn.spring_demo1.po.Orders",
+      "sourceType": "com.cn.spring_demo1.po.User"
+    },
+    {
+      "name": "user.user-age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.cn.spring_demo1.po.User",
+      "defaultValue": 0
+    },
+    {
+      "name": "user.user-name",
+      "type": "java.lang.String",
+      "sourceType": "com.cn.spring_demo1.po.User"
+    }
+  ],
+  "hints": []
+}

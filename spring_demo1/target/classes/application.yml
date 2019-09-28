@@ -1,0 +1,22 @@
+server:
+  port: 8088
+
+#spring:
+#  profiles:
+#    active: dev
+
+user:
+  user-name: shangdi
+  boss: true
+  list:
+    - haha
+    - shabi
+    - listvalue3
+  map:
+    key1: shabi
+    key2: shabi2
+    key3: shabi3
+  user-age: 10
+  orders:
+    order-id: 20
+    order-name: wwang

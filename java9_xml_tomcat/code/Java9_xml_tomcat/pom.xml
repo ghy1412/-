@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--打包方式-->
+    <packaging>war</packaging>
+
+
+    <groupId>com.bite.xml_tomcat</groupId>
+    <artifactId>Java7_xml_tomcat</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <!--导入依赖-->
+    <!--导入dom4j的jar包-->
+    <dependencies>
+
+
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <!--引入Servlet的api的jar
+        本地仓库存在servlet-jar包
+        tomcat内置lib：servlet-api.jar
+
+        -->
+        <dependency>
+            <!--外部本地仓库的servlet
+                    仅仅是提供者
+            -->
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <!--依赖范围
+                从本地仓库：提供者，不参与部署
+            -->
+            <scope>provided</scope>
+        </dependency>
+
+
+    </dependencies>
+
+    <!--maven内置的tomcat插件-->
+
+
+
+
+
+
+</project>

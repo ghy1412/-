@@ -4,68 +4,73 @@
 		<meta charset="utf-8">
 		<title>完美世界</title>
 		<!--内部样式-->
-		<style>
-			#a_id{
-				text-decoration: inherit ;
-			}
-			
-			#sid:hover{
-				font: "微软雅黑";
-				color: red;
-			}
-			
-			#div_id{
-					
-			}
-		</style>
-		<script>
-			function selectChange(){
-				var p = document.getElementById("sid");
-				alert(p.value);
-			}
-			
-			function checkPwd(){
-				var a = document.getElementById("pwd");
-				var text = a.value;
-				var check_text = /^\w{2,6}$/;
-				if (!check_text.test(text)){
-					alert("cuowu");
+		<script>		
+		
+		function genNewDate(){
+			var sp = document.getElementById("span_id");
+			var date = new Date();
+			var year = date.getFullYear();
+			var month = date.getMonth()+1;
+			var Day = date.getDate();
+			var str = year+"-"+month+"-"+Day;
+			sp.innerHTML = str;
+		}
+		
+		function clickT(){
+			location.href = "http://www.baidu.com";
+		}
+		/*setInterval("genNewDate()",1000);*/
+		/*setInterval("location.reload()",1000);*/
+		/*定义对象*/
+		function ArrayUtil(){
+			this.search = function(array, target){
+				for (var i = 0; i < array.length; i++) {
+					var p = array[i];
+					if (p == target){
+						return i;
+					}
 				}
-			  return true;
+				return -1;
 			}
+		}
+		var ar = new ArrayUtil();
+		var array = [1,2,34,5];
+		var af = ar.search(array, 2);
+		alert(af);
+		/*使用Json格式*/
+		/*
+		 前后端交互问题 :
+		 后端传给前台的数据是List/Map集合
+		 前端传递给页面之前: list集合/Map集合 ---> json格式 (json对象)
+		 * */
+		var p =
+		{
+			"name" : "zhaoliu",
+			"age" : 10,
+			"speak" : function(){
+				alert("调用了赵六说话的功能");
+			}
+		};
+		document.write(p.name+"<br/>");
+		document.write(p.age);
+		p.speak();
 		</script>
 	</head>
 	<body>
-		<a id = "a_id" href="http://www.baidu.com">百度大哥</a>
-		<a href="#a_id">tiaozhuan</a>
-		<input type="password" />
-		<input type="checkbox" name="wanmei">shijie</input>
-		<input type="checkbox" name="wanmei">wanmei</input>
-		<input type="checkbox" name="wanmei">caiguai</input>
-		<input type="radio" name="radio_a">男</input>
-		<input type="radio" name="radio_a">女</input>
-		
-		<!--隐藏域-->
-		<input type="hidden">
-		
-		<!--下拉菜单-->
-		<select id="sid" onchange="selectChange()">
-			<option>陕西</option>
-			<option>陕西</option>
-			<option>北京</option>
-		</select>
-		<br />
-		<hr />
-		<!--文本框-->
-		<textarea name="text" rows="10" cols="5"></textarea>
-		<!--负载均衡+高可用-->
-		
-		<div id="div_id">
-			<input type="password" />
-		</div>
-		<form action="htm.html" onsubmit="return checkPwd()">
-			<input type="password" id="pwd" />
-			<input type="submit" value="提交" />
-		</form>
+		<span id="span_id"></span>
+		<input type="button" onclick="clickT()" value="我想百度"/>
+		<!--
+			BOM : Browser Object Model :基于浏览器对象模型
+			js引擎在解析html页面的, 将html主要有以下四个对象
+			1)窗口对象 window 顶级对象 open()打开资源文件
+			2)地址栏对象 location 
+			          href属性: 更改页面地址(页面跳转)
+			          reload():重载页面
+			          location.reload();
+			          location.href
+			3)历史记录对象: history
+			4)屏幕分辨率: screen
+		-->
 	</body>
+
 </html>

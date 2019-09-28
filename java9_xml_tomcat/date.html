@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>date</title>
+	</head>
+	<body>
+		当前系统时间是：<span id="span_id"></span>
+	</body>
+<script>
+   function newDate(){
+       var date = new Date() ;
+	   var dateStr = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+
+	   date.getDate()+"&nbsp;&nbsp;"+date.getHours()+":"+date.getMinutes()+":"+
+	   date.getSeconds();
+	   
+	   var span = document.getElementById("span_id") ;
+	   span.innerHTML=dateStr;
+      
+   }
+   
+   window.setInterval("newDate()",1000) ;
+</script>
+</html>
